@@ -23,10 +23,10 @@ def search(query):
 		tit=i.find('a',{'rel':'bookmark'})
 		info['title'].append((tit.text, tit['href']))
 	if len(info['title']) == 0:
-		print("Film yang anda cari tidak ada ")
+		print("Film sing di luru laka tek")
 		return True
 	
-	print("\n\t[ Hasil ]")
+	print("\n\t[ Hasile kih]")
 	for x in info['title']:
 		print(f"{c}. {x[0]}")
 		c+=1
@@ -132,14 +132,14 @@ if __name__ == "__main__":
 	os.system('clear')
 	print("""
 	[ gena download film]
-	      | aja nggo download bokep tek |
+        | aja nggo download bokep rik |
 """)
 	try:
 		os.mkdir('result')
 	except: pass
 
 	try:
-		que=input("luru apa irae rik : ")
+		que=input("luru film apa irae rik : ")
 		search(que)
 	except Exception as Err:
 		print(Err)
