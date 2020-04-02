@@ -10,3 +10,8 @@ cd film
 python -m pip install requests click tqdm bs4
 
 Python film.py
+
+Misalnya e pengen Download maning 
+ cd film
+
+Python film
